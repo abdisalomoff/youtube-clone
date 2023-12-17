@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home/Home.jsx';
+import Home from './Pages/Home/Home.jsx';
 import Register from './Pages/Register/Register.jsx';
 import Login from './Pages/Login/Login.jsx';
 import NotFoundPage from './Pages/NotFoundPage.jsx';

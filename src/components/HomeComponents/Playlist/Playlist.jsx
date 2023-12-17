@@ -1,8 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import { useEffect, useState } from "react";
-// import { timeAgo } from "../../../assets/functions";
-
-// import useFetch from "../../../hooks/useFetch";
 import userAvatar from "../../../assets/images/userpic.svg"
 
 import "./Playlist.scss"

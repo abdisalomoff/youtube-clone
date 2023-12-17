@@ -4,10 +4,9 @@ import Playlist from "../../components/HomeComponents/Playlist/Playlist";
 import Recommended from "../../components/HomeComponents/Recommended/Recommended";
 import "./Home.scss";
 import "../../App.css"
-import Header from "../../components/Header/Header";
 import { useState } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Videos from "../Videos/Videos";
+
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
