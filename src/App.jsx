@@ -21,7 +21,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={userLogin&&userRegister?<Home/>:<Navigate to='/register'/>}/>
-      <Route path="/video/:videoId" element={<Videos/>}/>
+      <Route path="/video/:videoId" element = {<Videos/>}/>
      <Route path='/' element={<Home/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/login' element={<Login/>}/>
