@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 import { Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home/Home';
-import Register from './Pages/Register/Register';
-import Login from './Pages/Login/Login';
-import NotFoundPage from './Pages/NotFoundPage';
-import Videos from './pages/Videos/Videos';
+import Home from './pages/Home/Home.jsx';
+import Register from './Pages/Register/Register.jsx';
+import Login from './Pages/Login/Login.jsx';
+import NotFoundPage from './Pages/NotFoundPage.jsx';
+import Videos from './pages/Videos/Videos.jsx';
 
 function App() {
   const userRegister = JSON.parse(localStorage.getItem('userRegister'))
