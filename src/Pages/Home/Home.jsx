@@ -20,12 +20,11 @@ const Home = () => {
     <div className="home">
         <div className="container">
         <div className="home-inner">
-         <Header toggleSidebar={toggleSidebar}/>
         <main className='main-container'>
         <Sidebar isSidebarOpen={isSidebarOpen}/>
         <Routes> 
 
-         <Route path="/video/:videoId" element={<Videos  onEnter={() => setIsSidebarOpen(true)}/>}/>
+  
 
          <Route path="/trending" element={<h2>Trending</h2>}/>
 
