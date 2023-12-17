@@ -1,0 +1,184 @@
+.sitebar {
+    width: 100%;
+    max-width: 220px;
+    padding: 20px 0px;
+    height: 100vh;
+    position: sticky;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    & {
+        scrollbar-width: auto;
+    }
+
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #bdbdbd;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+        display: none;
+    }
+
+}
+
+.sitebar:hover::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+.nav-list {
+    margin: -15px;
+    margin-bottom: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-list__item {
+    margin: 15px;
+}
+
+.nav-list__item-link {
+    display: flex;
+    align-items: center;
+    color: #C2C2C2;
+    text-decoration: none;
+
+    &:hover {
+        color: #FF0000;
+        transition: color .3s ease-in-out;
+    }
+
+    &--active {
+        color: #FF0000;
+    }
+
+    &--active .nav-list__item-heading {
+        color: #FF0000;
+    }
+}
+
+.nav-list__item-heading {
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #898989;
+
+    &:hover {
+        color: #FF0000;
+        transition: color .3s ease-in-out;
+    }
+}
+
+
+
+.subscriptions h2 {
+    color: #000;
+
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.subscriptions-list {
+    margin: -7px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.subscriptions-list__item {
+    margin: 7px;
+}
+
+.subscriptions-list__item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover .subscriptions-list__item-img {
+        box-shadow: 0 0 .5px .5px #FF0000;
+        transition: box-shadow .3s ease-in-out;
+    }
+}
+
+.subscriptions-list__item-img {
+    border-radius: 50%;
+}
+
+.subscriptions-list__item-name {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #898989;
+    white-space: nowrap;
+
+    &:hover {
+        color: #FF0000;
+        transition: color .3s ease-in-out;
+    }
+}
+
+
+.sidebar-bottom {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .sitebar .container {
+        .sidebar-bottom {
+            display: none;
+        }
+    }
+
+    #nav-list-id {
+        display: none;
+    }
+
+    #subscriptions {
+        h2{
+            display: none;
+        }
+
+        li{
+            display: none;
+        }
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px;
+    }
+
+        .sitebar{
+            width: 100%;
+            max-width: 100%;
+            height: 10vh;
+            padding-bottom: 100px;
+        }
+
+        .home {
+            width: 256%;
+
+}}

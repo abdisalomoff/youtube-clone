@@ -1,0 +1,163 @@
+.videos {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    border-radius: 14px;
+    width: 852px;
+    height: 478px;
+}
+
+.videos-left {
+    width: 100%;
+    max-width: 852px;
+    ;
+}
+
+.videos-body {
+    margin-top: 20px;
+
+    h1 {
+        color: #192646;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &-results {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5px;
+
+        p {
+            color: #C2C2C2;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li button {
+            display: flex;
+            align-items: center;
+            padding: 8px 18px;
+            border: none;
+            background-color: rgb(235, 235, 235, 0.3);
+            border-radius: 20px;
+            cursor: pointer;
+
+            p {
+                display: inline-block;
+                margin-left: 5px;
+                color: #192646;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.more-btn {
+    background-color: transparent;
+}
+
+.videos-chanel {
+    display: flex;
+    width: 100%;
+    max-width: 852px;
+    margin-top: 30px;
+
+    div {
+        width: 100%;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+
+
+    div div {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+
+    div div h2 {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .videos-chanel-subscribe {
+        font-size: 14px;
+        color: #fff;
+        background-color: #F00;
+        border-radius: 20px;
+        padding: 8px 18px;
+        // display: block;
+        margin-left: auto;
+
+    }
+
+    .videos-pulished {
+        color: #C2C2C2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 2px;
+    }
+
+    .videos-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 14px;
+
+        button {
+            width: 90px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #C2C2C2;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 20px;
+
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.videos-right {
+    padding-left: 50px;
+
+    #playlist-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px;
+        // max-width: 1250px;
+        margin-top: 0px;
+        overflow-x: auto;
+    }
+
+    #playlist__item-video-img-col {
+        width: 400px;
+        height: 220px;
+    }
+
+}
