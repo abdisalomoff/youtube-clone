@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home.jsx';
 import Register from './Pages/Register/Register.jsx';
 import Login from './Pages/Login/Login.jsx';
 import NotFoundPage from './Pages/NotFoundPage.jsx';
-import Videos from './pages/Videos/Videos.jsx';
+import Videos from './Pages/Videos/Videos.jsx';
 import Layout from './Pages/Layout.jsx';
 
 function App() {
